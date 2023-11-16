@@ -14,14 +14,18 @@ using System.Windows.Shapes;
 
 namespace Exam.Presentation.Pages.Admin.CRUD_Teacher
 {
-    /// <summary>
-    /// Interaction logic for EditTeacherPage.xaml
-    /// </summary>
     public partial class EditTeacherPage : Window
     {
         public EditTeacherPage()
         {
             InitializeComponent();
+        }
+
+        private void ExitBorder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Presentation.Pages.Admin.AdminHomePage adminHomePage = new Presentation.Pages.Admin.AdminHomePage();
+            adminHomePage.Show();
+            this.Close();
         }
     }
 }

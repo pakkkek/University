@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exam.Presentation.Pages.Admin.CRUD_Schedule"
         mc:Ignorable="d"
-        Title="University (Admin)" Height="900" Width="1600">
+        Title="University (Admin)" Height="900" Width="1600" WindowStartupLocation="CenterScreen">
     <Grid>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel>
@@ -42,7 +42,7 @@
                             <Border.Effect >
                                 <DropShadowEffect ShadowDepth="1" Color="White" Opacity="0.8" BlurRadius="15"/>
                             </Border.Effect>
-                            <Image Source="C:\Users\Kpojl\source\repos\Exam\Assets\Images\quit-icon.png" Stretch="UniformToFill" />
+                            <Image Source="C:\Users\Kpojl\source\repos\pakkkek\University\Assets\Images\quit-icon.png" Stretch="UniformToFill" />
                         </Border>
                     </Grid>
                 </Border>

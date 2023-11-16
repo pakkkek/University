@@ -21,6 +21,11 @@ namespace Exam.Presentation.Pages.Admin.CRUD_Schedule
             InitializeComponent();
         }
 
-
+        private void ExitBorder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Presentation.Pages.Admin.AdminHomePage adminHomePage = new Presentation.Pages.Admin.AdminHomePage();
+            adminHomePage.Show();
+            this.Close();
+        }
     }
 }

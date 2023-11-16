@@ -25,6 +25,8 @@ namespace Exam.Presentation.Pages.Student
 
         private void ExitBorder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
         }
     }
