@@ -17,10 +17,10 @@
                     <Grid>
                         <Border x:Name="avatar"  Width="70" Height="70" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 10 0 0" CornerRadius="30">
                             <Border.Effect>
-                                <DropShadowEffect ShadowDepth="1" Color="Black" Opacity="0.5" BlurRadius="15"/>
+                                <DropShadowEffect ShadowDepth="1" Color="White" Opacity="0.5" BlurRadius="15"/>
                             </Border.Effect>
                             <Grid>
-                                <Image x:Name="avatarImage" Source="C:\Users\Kpojl\OneDrive\Изображения\Pic\Amongus.jpg" Stretch="UniformToFill" >
+                                <Image x:Name="avatarImage" Source="C:\Users\Kpojl\source\repos\pakkkek\University\Assets\Images\user-icon.png" Stretch="UniformToFill" >
                                     <Image.Clip>
                                         <EllipseGeometry x:Name="ellipseGeometry" Center="35,35" RadiusX="35" RadiusY="35"/>
                                     </Image.Clip>

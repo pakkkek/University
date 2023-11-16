@@ -55,10 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Domain\Entities\Admin.cs" />
+    <Compile Include="Domain\Entities\DataRepository.cs" />
     <Compile Include="Domain\Entities\Student.cs" />
+    <Compile Include="Domain\Entities\StudentsList.cs" />
     <Compile Include="Domain\Entities\Teacher.cs" />
-    <Compile Include="Domain\Entities\User.cs" />
+    <Compile Include="Domain\Entities\TeachersList.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>

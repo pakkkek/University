@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exam.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,25 @@ namespace Exam.Presentation.Pages.Admin.CRUD_Teacher
         public EditTeacherPage()
         {
             InitializeComponent();
+        }
+
+        private void AddTeacher_Click(object sender, RoutedEventArgs e)
+        {
+            string name = txtName.Text;
+            string photo = txtPhoto.Text;
+            string id = txtId.Text;
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(photo) || string.IsNullOrWhiteSpace(id))
+            {
+                MessageBox.Show("Please enter valid data.");
+                return;
+            }
+
+            var newTeacher = new Domain.Entities.Teacher(name, photo, id);
+            DataRepository.Instance.Teachers.Add(newTeacher);
+
+            txtName.Text = "";
+            txtPhoto.Text = "";
+            txtId.Text = "";
         }
 
         private void ExitBorder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
