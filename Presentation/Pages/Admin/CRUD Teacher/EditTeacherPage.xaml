@@ -71,17 +71,11 @@
                                 <Button Content="Add Teacher" Click="AddTeacher_Click" Margin="5"/>
                             </StackPanel>
 
-                            <ListView x:Name="LVTeachers" Margin="250,50,50,50" ItemsSource="{Binding Source={x:Static entities:DataRepository.Instance}, Path=Teachers}">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel>
-                                            <Image Width="50" Source="{Binding Photo}"/>
-                                            <TextBlock Text="{Binding Id}"/>
-                                            <TextBlock Text="{Binding Name}"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
+                            <!--Teachers-->
+                            <Border Height="170" Width="550" Margin="0 0 200 100 ">
+                                <DataGrid x:Name="DG_Teachers"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="-122,-132,-536,-290">
+                                </DataGrid>
+                            </Border>
                         </Grid>
                     </Border>
                 </Grid>

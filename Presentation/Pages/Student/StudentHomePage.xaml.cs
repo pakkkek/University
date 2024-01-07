@@ -1,6 +1,7 @@
-﻿using Exam.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,6 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
@@ -19,9 +19,20 @@ namespace Exam.Presentation.Pages.Student
 {
     public partial class StudentHomePage : Window
     {
+        private SqlConnection connection;
+        private string connectionString = @"Data Source=WIN-0I7PB3TGH35\SQLEXPRESS;Initial Catalog=University;Integrated Security=True;Encrypt=False";
+
         public StudentHomePage()
         {
+            connection = new SqlConnection(connectionString);
+            connection.Open();
             InitializeComponent();
+        }
+
+        private void ClearDataGrid()
+        {
+            DG_Schedules.ItemsSource = null;
+            DG_Students.ItemsSource = null;
         }
 
         private void ExitBorder_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

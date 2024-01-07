@@ -57,6 +57,12 @@
                         <Grid>
                             <TextBlock x:Name="scheduleTextBlock" Text="Schedule" FontSize="22" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 20 0 0" Opacity="0.8"/>
                             <Border Background="White" Height="2" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2" Margin="10 60 0 0" Opacity="0.5" Panel.ZIndex="1"/>
+
+                            <!--Schedules-->
+                            <Border Margin="0,67,35,10">
+                                <DataGrid x:Name="DG_Schedules"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,10,0,10">
+                                </DataGrid>
+                            </Border>
                         </Grid>
                     </Border>
 
@@ -69,17 +75,11 @@
                             <TextBlock Text="Students" FontSize="22" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 20 0 0 " Opacity="0.8"/>
                             <Border Background="White" Height="2" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2" Margin="10 60 0 0" Opacity="0.5" Panel.ZIndex="1"/>
 
-                            <ListView x:Name="LVStudents" Margin="50,100,50,50" ItemsSource="{Binding Source={x:Static entities:DataRepository.Instance}, Path=Students}">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel>
-                                            <Image Width="50" Source="{Binding Photo}"/>
-                                            <TextBlock Text="{Binding Id}"/>
-                                            <TextBlock Text="{Binding Name}"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
+                            <!--Students-->
+                            <Border Margin="0,67,35,10">
+                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,10,0,10">
+                                </DataGrid>
+                            </Border>
                         </Grid>
                     </Border>
                 </Grid>

@@ -57,7 +57,7 @@
                         <Grid>
                             <TextBlock x:Name="studentTextBlock" Text="Manage Students" FontSize="22" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 20 0 0" Opacity="0.8"/>
                             <Border Background="White" Height="2" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2" Margin="10 60 0 0" Opacity="0.5" Panel.ZIndex="1"/>
-                            
+
                             <StackPanel Height="200" Width="200" Margin="15,67,1265,433">
                                 <TextBlock Text="Name:" Foreground="LightGray"/>
                                 <TextBox x:Name="txtName" Margin="5"/>
@@ -71,17 +71,11 @@
                                 <Button Content="Add Student" Click="AddStudent_Click" Margin="5"/>
                             </StackPanel>
 
-                            <ListView x:Name="LVStudents" Margin="250,50,50,50" ItemsSource="{Binding Source={x:Static entities:DataRepository.Instance}, Path=Students}">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel>
-                                            <Image Width="50" Source="{Binding Photo}"/>
-                                            <TextBlock Text="{Binding Id}"/>
-                                            <TextBlock Text="{Binding Name}"/>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
+                            <!--Students-->
+                            <Border Margin="245,87,39,39">
+                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}">
+                                </DataGrid>
+                            </Border>
                         </Grid>
                     </Border>
                 </Grid>
