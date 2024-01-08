@@ -72,9 +72,8 @@
                             </StackPanel>
 
                             <!--Students-->
-                            <Border Margin="245,87,39,39">
-                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}">
-                                </DataGrid>
+                            <Border Margin="235,79,15,15">
+                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>

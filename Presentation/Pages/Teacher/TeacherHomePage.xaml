@@ -59,9 +59,8 @@
                             <Border Background="White" Height="2" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2" Margin="10 60 0 0" Opacity="0.5" Panel.ZIndex="1"/>
 
                             <!--Schedules-->
-                            <Border Margin="0,67,35,10">
-                                <DataGrid x:Name="DG_Schedules"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,10,0,10">
-                                </DataGrid>
+                            <Border Margin="15,79,15,15">
+                                <DataGrid x:Name="DG_Schedules"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>
@@ -76,9 +75,8 @@
                             <Border Background="White" Height="2" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" CornerRadius="2" Margin="10 60 0 0" Opacity="0.5" Panel.ZIndex="1"/>
 
                             <!--Students-->
-                            <Border Margin="0,67,35,10">
-                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,10,0,10">
-                                </DataGrid>
+                            <Border Margin="15,79,15,15">
+                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>

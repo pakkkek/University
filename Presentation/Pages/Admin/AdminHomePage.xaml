@@ -61,9 +61,8 @@
                                     Click="ManageSchedule_Click"/>
 
                             <!--Schedules-->
-                            <Border Margin="15,95,0,81" HorizontalAlignment="Left" Width="375">
-                                <DataGrid x:Name="DG_Schedules"  AutoGenerateColumns="True" ItemsSource="{Binding}">
-                                </DataGrid>
+                            <Border Width="375" Margin="15,79,15,55" HorizontalAlignment="Left">
+                                <DataGrid x:Name="DG_Schedules"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>
@@ -80,8 +79,8 @@
                                     Click="ManageTeacher_Click"/>
 
                             <!--Teachers-->
-                            <Border Height="170" Width="550" Margin="0 0 200 100 ">
-                                <DataGrid x:Name="DG_Teachers"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,-129,63,-255"/>
+                            <Border Margin="15,79,15,55">
+                                <DataGrid x:Name="DG_Teachers"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>
@@ -98,9 +97,8 @@
                                     Click="ManageStudent_Click"/>
 
                             <!--Students-->
-                            <Border Height="170" Width="550" Margin="0 0 200 100 ">
-                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}" Margin="10,-132,78,-258">
-                                </DataGrid>
+                            <Border Margin="15,79,15,55">
+                                <DataGrid x:Name="DG_Students"  AutoGenerateColumns="True" ItemsSource="{Binding}"/>
                             </Border>
                         </Grid>
                     </Border>
